@@ -1,0 +1,53 @@
+body {
+    color: #4E1958;
+    font-family: "Asset", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #E6E20F;
+    padding: 20px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+@media (min-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    h1 {
+        align-self: start;
+        justify-self: start;
+
+    }
+
+    .email {
+        align-self: start;
+        justify-self: end;
+    }
+
+    .phone {
+        grid-column: 2;
+        column-span: 2;
+        align-self: end;
+        justify-self: end;
+    }
+}
+
+a,
+h1 {
+    font-size: 25px;
+}
+
+a {
+    color: #4E1958;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
